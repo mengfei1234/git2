@@ -1,0 +1,47 @@
+1.注册GitHub账号以及创建GitHub仓库，详见张震录屏。
+
+2.创建好新仓库之后（仓库名字可以叫git，与本地仓库名字相同方便记忆）：
+根据github提示，执行：	$ git remote add origin https://github.com/haolic/git.git回车
+			//https:.......此地址填写自己的仓库地址。
+			$ git push -u origin master回车
+			//将本地仓库的内容推送到github仓库。
+	若弹出窗口需要登录，用注册的github账号密码登录即可。
+
+由于是第一次将本地仓库推送到github远程仓库，所以加上-u参数，git会把本地仓库内容推送到远程仓库，还会把远程仓库和本地仓库关联起来。
+origin是git默认对远程仓库的叫法。
+推送完之后浏览器访问https://github.com/haolic/git.git远程仓库，发现跟本地仓库是一样的。
+	
+3.现在，只要本地做了提交，就可以通过命令：
+			$ git push origin master回车//把本地master分支的最新修改推送至github。
+
+=======================
+
+
+4.以上是将本地仓库和远程仓库相关联，下面介绍克隆远程仓库到本地：
+	首先进入要存放仓库的目录，例如E盘根目录。
+			$ cd e:回车//进入e盘根目录
+	创建一个远程仓库，例如gitrepo
+			创建方法见张震录屏，但这次勾选readme,就会为我们添加一个readme.md文件。
+			$ git clone https://github.com/haolic/gitrepo.git回车//地址改成你自己的地址。
+	现在进入e:\gitrepo查看，已经从远程仓库将readme.md 克隆下来了。
+
+5.如果是多人协作开发，有三种方式。（详见4.GitHub有关多人开发.txt）
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+				------2017-8-7-H------
